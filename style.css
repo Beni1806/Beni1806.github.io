@@ -181,7 +181,7 @@ footer {
   border: 0;          /* removes any border */
   display: block;
   margin: 0 auto;
-  max-width: 200px;   /* adjust this value to change image max size */
+  max-width: 300%;   /* adjust this value to change image max size */
   width: 100%;        /* makes image responsive */
   height: auto;       /* keeps aspect ratio */
   border-radius: 12px;
