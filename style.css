@@ -166,8 +166,14 @@ footer {
 }
 .image-placeholder {
   margin-top: 2.5rem;
+  padding: 2rem;
+  background: #ecf0f1;
+  border: 2px dashed #bdc3c7;
+  border-radius: 12px;
   text-align: center;
+  transition: background 0.3s ease;
 }
+
 
 .image-placeholder:hover {
   background: #e1eaea;
@@ -181,4 +187,14 @@ footer {
   display: block !important;
   margin: 0 auto !important;
 }
+.intro-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 2rem auto;
+  border: 0;
+}
+
 
