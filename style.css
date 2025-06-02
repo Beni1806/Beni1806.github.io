@@ -178,7 +178,7 @@ footer {
   background: #e1eaea;
 }
 .image-placeholder img {
-  max-width: 250px !important;
+  max-width: 400px !important;
   width: 100% !important;
   height: auto !important;
   border-radius: 12px !important;
