@@ -1,0 +1,62 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #2a7f62;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.adsense-placeholder {
+  margin: 2rem 0;
+  min-height: 90px; /* typical ad height */
+  background: #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
