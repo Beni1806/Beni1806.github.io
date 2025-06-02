@@ -184,3 +184,11 @@ footer {
   max-width: 100%;
   border-radius: 12px;
 }
+.image-placeholder img {
+  max-width: 400px;  /* or any width you want */
+  width: 100%;       /* makes it responsive below max-width */
+  height: auto;      /* keep aspect ratio */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
