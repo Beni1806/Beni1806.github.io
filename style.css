@@ -177,3 +177,10 @@ footer {
 .image-placeholder:hover {
   background: #e1eaea;
 }
+.image-placeholder img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
