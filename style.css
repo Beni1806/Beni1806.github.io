@@ -178,17 +178,11 @@ footer {
   background: #e1eaea;
 }
 .image-placeholder img {
-  border: none;
+  border: 0;          /* removes any border */
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 200px;   /* adjust this value to change image max size */
+  width: 100%;        /* makes image responsive */
+  height: auto;       /* keeps aspect ratio */
   border-radius: 12px;
-}
-.image-placeholder img {
-  max-width: 400px;  /* or any width you want */
-  width: 100%;       /* makes it responsive below max-width */
-  height: auto;      /* keep aspect ratio */
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
 }
