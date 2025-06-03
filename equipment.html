@@ -2,17 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Recommended cannabis grow equipment setups for different budgets available in Switzerland, with explanations and product links." />
-  <meta name="keywords" content="Cannabis grow equipment, Switzerland, budget setups, grow tent, LED grow light, filters, fans" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Best cannabis growing equipment setups in Switzerland, categorized by budget from €100 to €2000." />
+  <meta name="keywords" content="Cannabis growing, equipment, Switzerland, budget setups, grow tent, LED light, fan, filter" />
   <title>Equipment – Cannabis Switzerland</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    /* Fade-in animation same as other pages */
+    /* Nav dropdown */
+    nav ul li {
+      position: relative;
+    }
+    nav ul li ul.dropdown {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      padding: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      top: 2.5rem;
+      left: 0;
+      min-width: 160px;
+      z-index: 100;
+    }
+    nav ul li:hover ul.dropdown {
+      display: block;
+    }
+    nav ul li ul.dropdown li {
+      list-style: none;
+      padding: 0.5rem 1rem;
+    }
+    nav ul li ul.dropdown li a {
+      color: #000;
+      text-decoration: none;
+      display: block;
+    }
+    nav ul li ul.dropdown li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Text color */
+    body {
+      color: #000;
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container consistent with other pages */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 0.3rem;
+      margin-top: 3rem;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      color: #333;
+    }
+
+    /* Setup block */
+    .setup {
+      border: 1px solid #ddd;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+      background: #fafafa;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+    }
+
+    .setup h3 {
+      margin-top: 0;
+    }
+
+    .products {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .products ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin: 0;
+    }
+
+    .products ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .products a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    .products a:hover {
+      text-decoration: underline;
+    }
+
+    /* Fade-in animation */
     .fade-in {
       animation: fadeIn 1.5s ease-in;
     }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -22,105 +127,6 @@
         opacity: 1;
         transform: translateY(0);
       }
-    }
-
-    /* Dropdown nav styles */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav ul li {
-      position: relative;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      padding: 0.5rem 1rem;
-      display: block;
-      font-weight: 600;
-    }
-
-    nav ul li.dropdown:hover > .dropdown-content,
-    nav ul li.dropdown:focus-within > .dropdown-content {
-      display: block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: white;
-      min-width: 190px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-      border-radius: 4px;
-      z-index: 10;
-    }
-
-    .dropdown-content li a {
-      padding: 0.5rem 1rem;
-      color: #333;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .dropdown-content li a:hover {
-      background-color: #f0f0f0;
-    }
-
-    /* Content styling */
-    main .content h2 i {
-      margin-right: 0.5rem;
-      color: #4caf50;
-    }
-
-    main .content h3 {
-      margin-top: 3rem;
-      margin-bottom: 0.8rem;
-      color: #222;
-      border-bottom: 2px solid #4caf50;
-      padding-bottom: 0.3rem;
-      font-weight: 700;
-    }
-
-    main .content section.setup {
-      background-color: #fafafa;
-      border-radius: 8px;
-      padding: 1.5rem 1.8rem;
-      margin-bottom: 2.5rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    }
-
-    main .content ul {
-      padding-left: 1.5rem;
-      margin-top: 0.3rem;
-    }
-
-    main .content ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    main .content p.explanation {
-      font-style: italic;
-      color: #555;
-      margin-top: 0.8rem;
-      margin-bottom: 1.2rem;
-      line-height: 1.4;
-    }
-
-    main .content a.product-link {
-      color: #4caf50;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    main .content a.product-link:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -132,22 +138,20 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="legalization.html">Legalization</a></li>
-          <li><a href="law.html">Laws</a></li>
-          <li class="dropdown">
-            <a href="equipment.html" class="dropbtn" aria-haspopup="true" aria-expanded="false">
-              Equipment <i class="fas fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-content" aria-label="submenu">
-              <li><a href="#budget-100">€100 Starter</a></li>
-              <li><a href="#budget-200">€200 Basic Plus</a></li>
-              <li><a href="#budget-500">€500 Intermediate</a></li>
-              <li><a href="#budget-750">€750 Advanced Compact</a></li>
-              <li><a href="#budget-1000">€1000 Advanced</a></li>
-              <li><a href="#budget-1500">€1500 Pro Grow</a></li>
-              <li><a href="#budget-2000">€2000 Premium Pro</a></li>
+          <li>
+            <a href="equipment.html" aria-current="page">Equipment <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown" aria-label="Equipment categories">
+              <li><a href="#under-100">€100 and below</a></li>
+              <li><a href="#100-200">€100 - €200</a></li>
+              <li><a href="#200-500">€200 - €500</a></li>
+              <li><a href="#500-750">€500 - €750</a></li>
+              <li><a href="#750-1000">€750 - €1000</a></li>
+              <li><a href="#1000-1500">€1000 - €1500</a></li>
+              <li><a href="#1500-2000">€1500 - €2000</a></li>
             </ul>
           </li>
+          <li><a href="legalization.html">Legalization</a></li>
+          <li><a href="law.html">Laws</a></li>
           <li><a href="tips.html">Tips</a></li>
           <li><a href="legal/privacy.html">Privacy</a></li>
           <li><a href="legal/disclaimer.html">Disclaimer</a></li>
@@ -156,75 +160,117 @@
     </div>
   </header>
 
-  <main class="fade-in">
+  <main class="container fade-in">
     <section class="content">
-      <h2><i class="fas fa-tools"></i> Recommended Equipment Setups by Budget</h2>
+      <h2><i class="fas fa-tools"></i> Cannabis Growing Equipment by Budget</h2>
+      <p>This page provides carefully selected cannabis growing equipment setups available in Switzerland or orderable to Switzerland. Each setup fits your budget category and gives the best value for money. Click on the categories in the menu or scroll down to explore detailed product lists with explanations.</p>
 
-      <p>Choosing the right equipment for growing cannabis depends heavily on your budget and goals. Below are carefully selected setups available in Switzerland or ship here, designed to give you the best value and reliability at each price level. Each setup includes product links and explanations to help you understand the choices.</p>
+      <!-- €100 and below -->
+      <div id="under-100" class="setup">
+        <h3>€100 and Below – Basic Starter Setup</h3>
+        <p>This ultra-budget setup is designed for hobbyists who want to start small. It includes a compact tent and a simple LED lamp, enough for a tiny plant or cloning.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/secret-jardin-dark-room-dr30-growzelt-30x30x60cm-4877" target="_blank" rel="noopener">Secret Jardin Dark Room DR30 Tent (30x30x60 cm)</a> – Compact and affordable, ideal for beginners.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe-cfl/43001-zkl-cfl-60w-led-grow-lampe.html" target="_blank" rel="noopener">ZKL CFL 60W LED Grow Lamp</a> – Low power, basic lighting suitable for seedlings and clones.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup? </em>It keeps costs extremely low but offers the essentials to get started. The small tent keeps the environment controlled while the low wattage LED uses minimal electricity. No ventilation included at this level, so ensure room airflow.</p>
+      </div>
 
-      <!-- 100€ Starter -->
-      <section class="setup" id="budget-100">
-        <h3>€100 – Starter Basic Setup</h3>
-        <ul>
-          <li><strong>Grow Tent:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/growbox-60x60x140-cm" target="_blank" rel="noopener noreferrer">Growbox 60x60x140 cm</a> (~70€)</li>
-          <li><strong>Grow Light:</strong> <a class="product-link" href="https://www.led-grow.ch/collections/grow-light/products/led-grow-light-15w" target="_blank" rel="noopener noreferrer">Basic 15W LED Panel</a> (~25€)</li>
-        </ul>
-        <p class="explanation">This entry-level setup is perfect for beginners wanting a simple grow space for 1-2 small plants. The 60x60x140 tent fits easily in small rooms. The 15W LED is basic but energy-efficient and enough for seedlings or clones. It’s a great way to get started without a big investment, though yields will be limited.</p>
-      </section>
+      <!-- €100 - €200 -->
+      <div id="100-200" class="setup">
+        <h3>€100 - €200 – Budget Step 1 Setup</h3>
+        <p>This setup upgrades the tent size and lighting power, adding basic ventilation for better air quality. It suits beginners growing a small plant indoors.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/secret-jardin-dark-room-dr60-growzelt-60x60x140cm-4883" target="_blank" rel="noopener">Secret Jardin Dark Room DR60 Tent (60x60x140 cm)</a> – More space for one or two plants.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe-cfl/47048-gpl-led-grow-lampe-150w.html" target="_blank" rel="noopener">Gpl LED Grow Lampe 150W</a> – Better light intensity for vegetative and early flowering stages.</li>
+            <li><a href="https://www.growmart.ch/de/ventilator/43571-ventilator-multifunktionell.html" target="_blank" rel="noopener">Basic Clip Fan</a> – Improves air circulation inside the tent.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup?</em> Increasing tent size and lamp wattage helps plants grow healthier. The clip fan keeps fresh air moving to avoid mold and heat stress. Perfect for small but serious beginner grows.</p>
+      </div>
 
-      <!-- 200€ Basic Plus -->
-      <section class="setup" id="budget-200">
-        <h3>€200 – Basic Plus Setup</h3>
-        <ul>
-          <li><strong>Grow Tent:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/growbox-80x80x180-cm" target="_blank" rel="noopener noreferrer">Growbox 80x80x180 cm</a> (~90€)</li>
-          <li><strong>Grow Light:</strong> <a class="product-link" href="https://www.led-grow.ch/collections/grow-light/products/led-grow-light-45w" target="_blank" rel="noopener noreferrer">45W Full Spectrum LED</a> (~90€)</li>
-          <li><strong>Fan:</strong> <a class="product-link" href="https://www.amazon.de/dp/B07FKDSWMQ" target="_blank" rel="noopener noreferrer">Small Clip Fan</a> (~20€)</li>
-        </ul>
-        <p class="explanation">With a bigger tent and a stronger 45W LED, you get better light coverage and vertical space for 2-3 plants. Adding a clip fan improves airflow, preventing mold and strengthening plants. This setup balances cost and functionality for beginner to intermediate growers.</p>
-      </section>
+      <!-- €200 - €500 -->
+      <div id="200-500" class="setup">
+        <h3>€200 - €500 – Budget Step 2 Setup</h3>
+        <p>This setup introduces a carbon filter for odor control and an improved ventilation system alongside a mid-sized tent and a quality LED lamp.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/homebox-ambient-q60-growzelt-60x60x160cm-4879" target="_blank" rel="noopener">Homebox Ambient Q60 Tent (60x60x160 cm)</a> – Durable and light-tight.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe/44001-mars-hydro-ts-1000-led-grow-lampe.html" target="_blank" rel="noopener">Mars Hydro TS 1000 LED Grow Light</a> – Full spectrum and efficient for flowering.</li>
+            <li><a href="https://www.growmart.ch/de/ventilator/43520-ac-infinity-cloudline-t4.html" target="_blank" rel="noopener">AC Infinity Cloudline T4 Inline Fan + Carbon Filter Combo</a> – Controls odor and ventilation.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup?</em> The carbon filter keeps smells in check, important if you live in shared or sensitive environments. The Mars Hydro light is energy efficient with good output, balancing quality and price.</p>
+      </div>
 
-      <!-- 500€ Intermediate -->
-      <section class="setup" id="budget-500">
-        <h3>€500 – Intermediate Setup</h3>
-        <ul>
-          <li><strong>Grow Tent:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/growbox-100x100x200-cm" target="_blank" rel="noopener noreferrer">Growbox 100x100x200 cm</a> (~150€)</li>
-          <li><strong>Grow Light:</strong> <a class="product-link" href="https://www.led-grow.ch/collections/grow-light/products/led-grow-light-150w" target="_blank" rel="noopener noreferrer">150W Full Spectrum LED</a> (~200€)</li>
-          <li><strong>Inline Fan + Carbon Filter:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/luftanlage-125-mm" target="_blank" rel="noopener noreferrer">125mm Inline Fan + Filter Combo</a> (~120€)</li>
-          <li><strong>Oscillating Fan:</strong> <a class="product-link" href="https://www.amazon.de/dp/B07JGHQ9P6" target="_blank" rel="noopener noreferrer">Small Oscillating Fan</a> (~40€)</li>
-        </ul>
-        <p class="explanation">A popular mid-budget setup: a larger tent for multiple plants, a strong 150W LED for healthy growth & flowering, plus a good ventilation system with carbon filter to control odors. Oscillating fans promote air circulation. This setup is solid for growers wanting quality results without breaking the bank.</p>
-      </section>
+      <!-- €500 - €750 -->
+      <div id="500-750" class="setup">
+        <h3>€500 - €750 – Midrange Step 1 Setup</h3>
+        <p>Better tent, upgraded LED lighting, and enhanced ventilation with a premium filter fan combo designed for more serious growers with larger plants.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/secret-jardin-dark-room-dr90-growzelt-90x90x180cm-4881" target="_blank" rel="noopener">Secret Jardin Dark Room DR90 Tent (90x90x180 cm)</a> – Larger space for multiple plants.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe/44003-spider-farmer-sf1000-led-grow-lampe.html" target="_blank" rel="noopener">Spider Farmer SF1000 LED Grow Light</a> – High-quality, full-spectrum, great for all growth stages.</li>
+            <li><a href="https://www.growmart.ch/de/ventilator/43520-ac-infinity-cloudline-t4.html" target="_blank" rel="noopener">AC Infinity Cloudline T4 Inline Fan + Carbon Filter Combo</a> – Reliable odor and airflow control.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup?</em> This is a balanced setup with enough space and light for 2-4 plants. The Spider Farmer SF1000 is popular for its efficiency and spectrum, making it a great bang for your buck.</p>
+      </div>
 
-      <!-- 750€ Advanced Compact -->
-      <section class="setup" id="budget-750">
-        <h3>€750 – Advanced Compact Setup</h3>
-        <ul>
-          <li><strong>Grow Tent:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/growbox-120x120x200-cm" target="_blank" rel="noopener noreferrer">Growbox 120x120x200 cm</a> (~220€)</li>
-          <li><strong>Grow Light:</strong> <a class="product-link" href="https://www.led-grow.ch/collections/grow-light/products/led-grow-light-240w" target="_blank" rel="noopener noreferrer">240W Full Spectrum LED</a> (~320€)</li>
-          <li><strong>Inline Fan + Carbon Filter:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/luftanlage-160-mm" target="_blank" rel="noopener noreferrer">160mm Inline Fan + Filter Combo</a> (~170€)</li>
-          <li><strong>Oscillating Fan:</strong> <a class="product-link" href="https://www.amazon.de/dp/B07JGHQ9P6" target="_blank" rel="noopener noreferrer">Oscillating Fan</a> (~40€)</li>
-        </ul>
-        <p class="explanation">This setup upgrades tent size and light intensity for bigger yields or more plants. The 240W LED provides full-spectrum light that supports all growth stages efficiently. The larger fan & filter combo ensures excellent airflow and odor control for a clean, stealthy grow.</p>
-      </section>
+      <!-- €750 - €1000 -->
+      <div id="750-1000" class="setup">
+        <h3>€750 - €1000 – Midrange Step 2 Setup</h3>
+        <p>Larger tent, stronger lighting, and improved ventilation components designed for growers aiming for bigger yields and better control.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/homebox-ambient-q120-growzelt-120x120x200cm-4885" target="_blank" rel="noopener">Homebox Ambient Q120 Tent (120x120x200 cm)</a> – Spacious and light-tight.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe/44008-spider-farmer-sf2000-led-grow-lampe.html" target="_blank" rel="noopener">Spider Farmer SF2000 LED Grow Light</a> – Powerful full spectrum LED for excellent yields.</li>
+            <li><a href="https://www.growmart.ch/de/ventilator/43530-ac-infinity-cloudline-t6.html" target="_blank" rel="noopener">AC Infinity Cloudline T6 Inline Fan + Carbon Filter Combo</a> – More airflow for larger tents.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup?</em> Larger grow space and higher light output support bigger plants and multiple harvests per cycle. AC Infinity T6 fan adds stronger airflow for better environment control.</p>
+      </div>
 
-      <!-- 1000€ Advanced -->
-      <section class="setup" id="budget-1000">
-        <h3>€1000 – Advanced Setup</h3>
-        <ul>
-          <li><strong>Grow Tent:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/growbox-150x150x200-cm" target="_blank" rel="noopener noreferrer">Growbox 150x150x200 cm</a> (~280€)</li>
-          <li><strong>Grow Light:</strong> <a class="product-link" href="https://www.led-grow.ch/collections/grow-light/products/led-grow-light-400w" target="_blank" rel="noopener noreferrer">400W Full Spectrum LED</a> (~450€)</li>
-          <li><strong>Inline Fan + Carbon Filter:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/luftanlage-200-mm" target="_blank" rel="noopener noreferrer">200mm Inline Fan + Filter Combo</a> (~220€)</li>
-          <li><strong>Oscillating Fan:</strong> <a class="product-link" href="https://www.amazon.de/dp/B07JGHQ9P6" target="_blank" rel="noopener noreferrer">Oscillating Fan</a> (~40€)</li>
-          <li><strong>Digital Timer:</strong> <a class="product-link" href="https://www.amazon.de/dp/B071Z82MZ4" target="_blank" rel="noopener noreferrer">Digital Timer Switch</a> (~25€)</li>
-        </ul>
-        <p class="explanation">This pro-grade setup is for serious growers who want to maximize yield and quality. Larger tent, powerful 400W LED ensures dense flowering, robust ventilation system keeps temps and odors in check. Timer switch adds automation for light cycles, helping maintain perfect growth conditions.</p>
-      </section>
+      <!-- €1000 - €1500 -->
+      <div id="1000-1500" class="setup">
+        <h3>€1000 - €1500 – Highend Step 1 Setup</h3>
+        <p>Professional-grade tent, top-tier LED lighting, advanced ventilation, and filtration for serious growers focused on maximizing quality and yield.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/secret-jardin-dark-room-dr150-growzelt-150x150x200cm-4888" target="_blank" rel="noopener">Secret Jardin Dark Room DR150 Tent (150x150x200 cm)</a> – Large grow area for several plants.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe/44010-spider-farmer-sf4000-led-grow-lampe.html" target="_blank" rel="noopener">Spider Farmer SF4000 LED Grow Light</a> – Powerful full spectrum LED light.</li>
+            <li><a href="https://www.growmart.ch/de/ventilator/43540-ac-infinity-cloudline-t8.html" target="_blank" rel="noopener">AC Infinity Cloudline T8 Inline Fan + Carbon Filter Combo</a> – High airflow and odor control.</li>
+            <li><a href="https://www.amazon.de/dp/B01M8L5Z3Y" target="_blank" rel="noopener">Digital Timer Controller</a> – Precise light cycle management.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup?</em> This setup supports larger grows with professional gear trusted by many growers. The powerful LED light ensures dense buds while the AC Infinity fan keeps air fresh and odor controlled.</p>
+      </div>
 
-      <!-- 1500€ Pro Grow -->
-      <section class="setup" id="budget-1500">
-        <h3>€1500 – Pro Grow Setup</h3>
-        <ul>
-          <li><strong>Grow Tent:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/growbox-200x200x220-cm" target="_blank" rel="noopener noreferrer">Growbox 200x200x220 cm</a> (~400€)</li>
-          <li><strong>Grow Light:</strong> <a class="product-link" href="https://www.led-grow.ch/collections/grow-light/products/led-grow-light-600w" target="_blank" rel="noopener noreferrer">600W Full Spectrum LED</a> (~650€)</li>
-          <li><strong>Inline Fan + Carbon Filter:</strong> <a class="product-link" href="https://www.grow-shop24.ch/de/luftanlage-250-mm" target="_blank" rel="noopener noreferrer">250mm Inline Fan + Filter Combo</a> (~270€)</li>
-          <li><strong>Oscillating Fans (x2):</strong> <a class="product-link" href="
+      <!-- €1500 - €2000 -->
+      <div id="1500-2000" class="setup">
+        <h3>€1500 - €2000 – Highend Step 2 Setup</h3>
+        <p>Top-tier tent and lighting paired with superior ventilation, filtration, and environment control equipment for maximum yields and quality.</p>
+        <div class="products">
+          <strong>Products:</strong>
+          <ul>
+            <li><a href="https://www.grow-shop.ch/de/produkte/secret-jardin-dark-room-dr180-growzelt-180x180x200cm-4891" target="_blank" rel="noopener">Secret Jardin Dark Room DR180 Tent (180x180x200 cm)</a> – Extra-large space for big grows.</li>
+            <li><a href="https://www.growmart.ch/de/led-lampe/44011-spider-farmer-sf7000-led-grow-lampe.html" target="_blank" rel="noopener">Spider Farmer SF7000 LED Grow Light</a> – Ultra-powerful full spectrum LED.</li>
+            <li><a href="https://www.growmart.ch/de/ventilator/43550-ac-infinity-cloudline-t10.html" target="_blank" rel="noopener">AC Infinity Cloudline T10 Inline Fan + Carbon Filter Combo</a> – Excellent airflow and filtration.</li>
+            <li><a href="https://www.amazon.de/dp/B075X3J2Z2" target="_blank" rel="noopener">Temperature & Humidity Controller</a> – Keeps environment perfect automatically.</li>
+          </ul>
+        </div>
+        <p><em>Why this setup?</em> The largest tent and highest wattage LED give you the best possible yield and quality indoors. The controller ensures perfect environment without manual work. Ideal for commercial or dedicated hobby growers.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
