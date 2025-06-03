@@ -10,6 +10,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f9f8;
+      color: #222;
+    }
+
+    header, footer {
+      background-color: #144d3c;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+    }
+
     .fade-in {
       animation: fadeIn 1.5s ease-in;
     }
@@ -23,6 +67,34 @@
         opacity: 1;
         transform: translateY(0);
       }
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    .content {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2, h3 {
+      color: #144d3c;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer p {
+      margin: 0;
+      text-align: center;
     }
   </style>
 </head>
@@ -46,42 +118,35 @@
   </header>
 
   <main class="fade-in">
-    <section class="content">
-      <h2><i class="fas fa-scale-balanced"></i> Current Cannabis Laws in Switzerland</h2>
+    <div class="container">
+      <section class="content">
+        <h2><i class="fas fa-scale-balanced"></i> Current Cannabis Laws in Switzerland</h2>
 
-      <p>Cannabis remains illegal for recreational use in Switzerland, but the legal framework has started to shift in recent years. Here's what the law currently allows — and what it doesn't.</p>
+        <p>Cannabis remains illegal for recreational use in Switzerland, but the legal framework has started to shift. Here's what’s currently allowed — and what’s not.</p>
 
-      <h3>THC Limits and Hemp Products</h3>
-      <p>Cannabis with less than 1.0% THC is legal to produce, sell, and consume. These low-THC products are considered "hemp" and are commonly sold in tobacco shops, CBD stores, or online. They are often used for relaxation or wellness but don’t have psychoactive effects like high-THC cannabis.</p>
+        <h3>THC Limits and Hemp Products</h3>
+        <p>Cannabis with less than 1.0% THC is legal to produce, sell, and use. These are classified as "hemp" and sold in shops or online. They must follow strict rules and come from approved strains.</p>
 
-      <p>These products must meet strict standards. They must not exceed the 1.0% THC limit and must be grown from approved hemp strains. Products that do cross the line are considered narcotics and are illegal under the Federal Narcotics Act.</p>
+        <p>Anything over 1.0% THC is considered a narcotic and is illegal under federal law.</p>
 
-      <h3>Recreational Cannabis (Over 1% THC)</h3>
-      <p>Possession, sale, cultivation, and consumption of cannabis with more than 1.0% THC is still banned. However, the penalties vary depending on the amount and the context.</p>
+        <h3>Recreational Cannabis (Over 1% THC)</h3>
+        <p>Still banned. But how the law is enforced depends on the amount and your canton:</p>
+        <ul>
+          <li><strong>Under 10g:</strong> No criminal punishment, but it can be confiscated.</li>
+          <li><strong>Over 10g or public use:</strong> Risk of 100 CHF fine.</li>
+          <li><strong>Dealing/importing/cultivating:</strong> Considered criminal — fines or prison possible.</li>
+        </ul>
 
-      <ul>
-        <li><strong>Under 10 grams for personal use:</strong> If you're caught with less than 10 grams of cannabis for your own use, you're not punished criminally — but police may still confiscate it.</li>
-        <li><strong>More than 10 grams or public use:</strong> You may be fined around 100 CHF and your cannabis will be confiscated.</li>
-        <li><strong>Dealing, importing, or cultivating:</strong> These are considered criminal offenses and can result in heavy fines or prison time depending on the severity.</li>
-      </ul>
+        <h3>Medical Cannabis</h3>
+        <p>Since August 2022, doctors can prescribe THC-based medicine without special federal approval. Used for pain, MS, cancer symptoms, etc. But only via prescription and pharmacies.</p>
 
-      <p>In practice, enforcement often depends on the local police and canton. Some cantons are stricter, others more tolerant.</p>
+        <h3>Pilot Projects</h3>
+        <p>In cities like Zurich, Basel, and Lausanne, pilot programs allow legal cannabis use for approved residents. Data from these studies will help shape future national policy.</p>
 
-      <h3>Medical Cannabis</h3>
-      <p>Medical cannabis became more accessible in Switzerland in August 2022. Doctors can now prescribe cannabis-based medications with THC without needing special federal approval. These treatments are typically used for conditions like chronic pain, multiple sclerosis, or cancer symptoms.</p>
-
-      <p>However, these products are only available through prescription and pharmacy. Self-medication or buying cannabis from unregulated sources remains illegal.</p>
-
-      <h3>Pilot Projects</h3>
-      <p>Several pilot programs are running in cities like Zurich, Basel, and Lausanne. These allow registered participants to legally buy and consume high-THC cannabis under controlled conditions.</p>
-
-      <p>Participants must be residents of the participating cities, over 18 years old, and pass a health screening. These projects are closely monitored and are intended to help shape future national policy based on real-world data.</p>
-
-      <h3>Loopholes and Gray Areas</h3>
-      <p>Some people grow a few low-THC hemp plants at home, which is allowed if they stay under 1.0% THC. Growing high-THC cannabis is not legal, even for personal use, and can lead to legal consequences.</p>
-
-      <p>Private use of small amounts is often tolerated, especially in larger cities, but public smoking, dealing, or having more than 10 grams can still get you fined or charged.</p>
-    </section>
+        <h3>Loopholes and Gray Areas</h3>
+        <p>Growing low-THC plants (<1%) at home is okay. But growing high-THC cannabis is illegal. Public use and anything over 10g can still lead to fines — even if enforcement varies between cantons.</p>
+      </section>
+    </div>
   </main>
 
   <footer>
