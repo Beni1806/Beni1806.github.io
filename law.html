@@ -49,8 +49,14 @@
       font-weight: bold;
     }
 
-    nav a:hover,
+    /* Updated current page style: no underline, green color, bold */
     nav a[aria-current="page"] {
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
       text-decoration: underline;
     }
 
@@ -82,6 +88,12 @@
 
     h2, h3 {
       color: #144d3c;
+    }
+
+    /* Match icon color to green */
+    h2 i {
+      margin-right: 0.5rem;
+      color: #4caf50;
     }
 
     ul {
@@ -144,7 +156,7 @@
         <p>In cities like Zurich, Basel, and Lausanne, pilot programs allow legal cannabis use for approved residents. Data from these studies will help shape future national policy.</p>
 
         <h3>Loopholes and Gray Areas</h3>
-        <p>Growing low-THC plants (<1%) at home is okay. But growing high-THC cannabis is illegal. Public use and anything over 10g can still lead to fines — even if enforcement varies between cantons.</p>
+        <p>Growing low-THC plants (&lt;1%) at home is okay. But growing high-THC cannabis is illegal. Public use and anything over 10g can still lead to fines — even if enforcement varies between cantons.</p>
       </section>
     </div>
   </main>
