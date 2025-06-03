@@ -3,93 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cannabis Switzerland – Your guide to legalization, grow tips, and equipment" />
-  <meta name="keywords" content="Cannabis, Switzerland, legalization, grow, weed, indoor, cultivation" />
-  <title>Cannabis Switzerland</title>
+  <meta name="description" content="Cannabis Switzerland – your go-to resource for cannabis laws, legalization updates, and growing tips in Switzerland." />
+  <meta name="keywords" content="Cannabis, Switzerland, Legalization, Growing, Laws, Equipment, Tips" />
+  <title>Home – Cannabis Switzerland</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 1rem 0;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      padding: 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 2rem 0;
+    .fade-in {
       animation: fadeIn 1.5s ease-in;
-    }
-
-    .intro {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      .intro {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-
-      .intro-text {
-        flex: 1;
-        padding-right: 2rem;
-      }
-
-      .intro-image-container {
-        flex: 1;
-      }
-    }
-
-    .intro-image {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .adsense-placeholder {
-      background: #e0e0e0;
-      padding: 1rem;
-      text-align: center;
-      border-radius: 8px;
-      margin-top: 2rem;
-      font-style: italic;
-    }
-
-    footer {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 3rem;
     }
 
     @keyframes fadeIn {
@@ -102,8 +23,20 @@
         transform: translateY(0);
       }
     }
+
+    nav ul li a[aria-current="page"] {
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h2 i {
+      margin-right: 0.5rem;
+      color: #4caf50;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -111,35 +44,36 @@
       <nav>
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="legalization.html">Legalization Status</a></li>
-          <li><a href="law.html">Current Laws</a></li>
-          <li><a href="equipment.html">Growing Equipment</a></li>
-          <li><a href="tips.html">Tips & Tricks</a></li>
-          <li><a href="legal/privacy.html">Privacy Policy</a></li>
+          <li><a href="legalization.html">Legalization</a></li>
+          <li><a href="law.html">Laws</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="legal/privacy.html">Privacy</a></li>
           <li><a href="legal/disclaimer.html">Disclaimer</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="container intro">
-      <div class="intro-text">
-        <h2><i class="fas fa-cannabis"></i> Welcome to Cannabis Switzerland</h2>
-        <p>Your trusted source for everything cannabis in Switzerland. Whether you're curious about the current legal landscape, interested in starting your own grow operation, or just looking for practical advice – you’re in the right place.</p>
-        <p>Switzerland's cannabis laws are changing, and we help you stay informed with up-to-date info on legalization, rights, and responsibilities.</p>
-        <p>If growing is your goal, we offer guides on equipment, indoor vs. outdoor cultivation, and budget setups.</p>
-        <p>We also provide tips for plant health, maximizing yields, and harvesting properly. Beginner or pro – we’ve got your back.</p>
-        <p>Stay connected with Cannabis Switzerland — your guide for laws, growing tips, and reliable resources for Swiss cannabis enthusiasts.</p>
+  <main class="fade-in">
+    <section class="content">
+      <h2><i class="fas fa-cannabis"></i> Welcome to Cannabis Switzerland</h2>
+      <p>Your trusted source for accurate and up-to-date information about cannabis in Switzerland. Whether you're curious about legalization, want to understand the laws, or grow your own plants — we've got you covered.</p>
 
-        <div class="adsense-placeholder">
-          <!-- Google AdSense code goes here -->
-          AdSense Placeholder
-        </div>
-      </div>
-      <div class="intro-image-container">
-        <img class="intro-image" src="images/Introduction-page.jpg" alt="Healthy cannabis plant growing indoors in Switzerland" />
-      </div>
+      <h3>What You’ll Find Here</h3>
+      <ul>
+        <li>✅ An overview of current <strong>cannabis laws</strong> in Switzerland</li>
+        <li>🌿 Updates on <strong>legalization efforts</strong> and pilot programs</li>
+        <li>💡 Practical <strong>tips for growing</strong> cannabis at home</li>
+        <li>🛠️ A look at useful <strong>growing equipment</strong></li>
+        <li>⚠️ Clear <strong>privacy policies and disclaimers</strong></li>
+      </ul>
+
+      <h3>Why It Matters</h3>
+      <p>The landscape of cannabis in Switzerland is changing fast. Our mission is to make that information accessible, accurate, and easy to understand — whether you’re a patient, a grower, or just curious.</p>
+
+      <h3>Stay Informed</h3>
+      <p>We update this site regularly as laws evolve. Be sure to check back for the latest changes and announcements.</p>
     </section>
   </main>
 
@@ -150,4 +84,3 @@
   </footer>
 </body>
 </html>
-
