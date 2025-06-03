@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      color: #000;
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
+      color: #000; /* all text black */
     }
 
     .fade-in {
@@ -31,35 +28,17 @@
       }
     }
 
-    header {
-      background-color: #f8f8f8;
-      padding: 1rem 0;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin: 0 0 0.5rem;
-    }
-
     nav ul {
-      list-style: none;
-      padding-left: 0;
       display: flex;
       gap: 1rem;
-      flex-wrap: wrap;
+      padding-left: 0;
+      list-style: none;
     }
 
     nav ul li a {
       text-decoration: none;
       color: #000;
       font-weight: normal;
-      font-size: 1rem;
     }
 
     nav ul li a[aria-current="page"] {
@@ -67,44 +46,54 @@
       font-weight: bold;
     }
 
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    .dropdown select {
+      padding: 0.5rem 0.8rem;
+      font-size: 1rem;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: white;
+      color: #000;
+    }
+
     main.content {
       max-width: 900px;
       margin: auto;
       font-size: 1.1rem;
       line-height: 1.6;
-      padding: 2rem 1rem;
-    }
-
-    h2, h3 {
-      color: #000;
     }
 
     h2 {
       margin-bottom: 1rem;
-      font-size: 1.8rem;
+      color: #000;
     }
 
     h3 {
       margin-top: 2rem;
       margin-bottom: 0.8rem;
-      font-size: 1.4rem;
+      color: #000;
     }
 
     p {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       color: #000;
-      font-size: 1.1rem;
     }
 
     ul {
       padding-left: 1.5rem;
       color: #000;
-      font-size: 1.05rem;
       margin-bottom: 1.5rem;
     }
 
     ul li {
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.7rem;
     }
 
     a {
@@ -116,38 +105,11 @@
       text-decoration: underline;
     }
 
-    .dropdown {
-      margin-bottom: 2rem;
-    }
-
-    .dropdown label {
-      font-weight: 600;
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-
-    .dropdown select {
-      padding: 0.5rem 0.8rem;
-      font-size: 1rem;
-      border: 1.5px solid #ccc;
-      border-radius: 6px;
-      background-color: #fff;
-      color: #000;
-      cursor: pointer;
-    }
-
+    /* Product label styling */
     .product-label {
       font-weight: 600;
     }
 
-    footer {
-      background-color: #f8f8f8;
-      padding: 1rem 0;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #333;
-    }
   </style>
   <script>
     function showSetup() {
@@ -158,7 +120,9 @@
         s.style.display = s.id === selected ? "block" : "none";
       });
     }
-    window.addEventListener('DOMContentLoaded', showSetup);
+    window.addEventListener('DOMContentLoaded', () => {
+      showSetup();
+    });
   </script>
 </head>
 
@@ -168,8 +132,8 @@
       <h1>Cannabis Switzerland</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
           <li><a href="equipment.html" aria-current="page">Equipment</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="legalization.html">Legalization</a></li>
           <li><a href="law.html">Laws</a></li>
           <li><a href="tips.html">Tips</a></li>
@@ -198,10 +162,114 @@
       </select>
     </div>
 
-    <!-- Your existing equipment sections remain unchanged -->
-    <!-- [START OF SETUPS] -->
-    <!-- Paste all <section id="under100"> to <section id="under2000"> here without change -->
-    <!-- [END OF SETUPS] -->
+    <!-- Budget Starter -->
+    <section id="under100" class="setup" style="display:none;">
+      <h3>Budget Starter (Under 100 CHF)</h3>
+      <p>This setup is for absolute beginners or those on a very tight budget. It includes a small tent and a basic lamp, enough for one small plant.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-60x60x140-cm-schwarz" target="_blank" rel="noopener noreferrer">Growbox Growtent 60x60x140 cm</a><br>
+          Compact and easy to set up, perfect for one plant.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-gamete-45w" target="_blank" rel="noopener noreferrer">GAMETE 45W LED Grow Lamp</a><br>
+          Efficient low-power LED light suitable for seedlings and small plants.</li>
+      </ul>
+      <p>This setup keeps it simple but effective to get you started indoors without much investment.</p>
+    </section>
+
+    <!-- Basic Entry -->
+    <section id="under200" class="setup" style="display:none;">
+      <h3>Basic Entry (100-200 CHF)</h3>
+      <p>A step up from budget starter with a slightly bigger tent and stronger lighting to support healthy growth.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-80x80x160-cm" target="_blank" rel="noopener noreferrer">Growbox Growtent 80x80x160 cm</a><br>
+          Larger space for up to 2 plants.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-spyder-80w" target="_blank" rel="noopener noreferrer">Spyder 80W LED Grow Lamp</a><br>
+          More powerful LED light for robust vegetative growth.</li>
+      </ul>
+      <p>This setup balances cost and quality, suitable for beginners looking to grow more seriously.</p>
+    </section>
+
+    <!-- Value Setup -->
+    <section id="under500" class="setup" style="display:none;">
+      <h3>Value Setup (200-500 CHF)</h3>
+      <p>Good quality tent and lighting with basic ventilation included for a stable growing environment.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-100x100x200-cm" target="_blank" rel="noopener noreferrer">Growbox Growtent 100x100x200 cm</a><br>
+          Ample room for multiple plants.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-spyder-150w" target="_blank" rel="noopener noreferrer">Spyder 150W LED Grow Lamp</a><br>
+          Strong lighting for full vegetative and flowering cycles.</li>
+        <li><span class="product-label">Fan:</span> <a href="https://www.grow-shop24.ch/ventilator-125-mm" target="_blank" rel="noopener noreferrer">Inline Fan 125mm</a><br>
+          Ensures good air circulation and temperature control.</li>
+      </ul>
+      <p>This setup supports healthier plants through better airflow and lighting, perfect for hobbyists aiming for quality yields.</p>
+    </section>
+
+    <!-- Advanced Value -->
+    <section id="under750" class="setup" style="display:none;">
+      <h3>Advanced Value (500-750 CHF)</h3>
+      <p>Enhanced setup with better lighting, ventilation, and air filtering for improved odor control.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-120x120x200-cm" target="_blank" rel="noopener noreferrer">Growbox Growtent 120x120x200 cm</a><br>
+          More growing space, perfect for moderate plant numbers.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-gavita-170w" target="_blank" rel="noopener noreferrer">Gavita 170W LED Grow Lamp</a><br>
+          Reliable full-cycle LED lamp with strong output.</li>
+        <li><span class="product-label">Fan:</span> <a href="https://www.grow-shop24.ch/ventilator-150-mm" target="_blank" rel="noopener noreferrer">Inline Fan 150mm</a><br>
+          Enhanced airflow capacity for larger spaces.</li>
+        <li><span class="product-label">Filter:</span> <a href="https://www.grow-shop24.ch/aktivkohlefilter-150-mm" target="_blank" rel="noopener noreferrer">Activated Carbon Filter 150mm</a><br>
+          Effective odor control during flowering.</li>
+      </ul>
+      <p>This setup is ideal for growers who want solid results with controlled environment and discreet odor management.</p>
+    </section>
+
+    <!-- Midrange Choice -->
+    <section id="under1000" class="setup" style="display:none;">
+      <h3>Midrange Choice (750-1000 CHF)</h3>
+      <p>Well-rounded setup with advanced lighting and ventilation, suitable for serious home growers.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-150x150x200-cm" target="_blank" rel="noopener noreferrer">Growbox Growtent 150x150x200 cm</a><br>
+          Large space for multiple plants or bigger yields.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-cob-300w" target="_blank" rel="noopener noreferrer">COB LED Grow Lamp 300W</a><br>
+          High-quality, energy-efficient lighting for strong flowering.</li>
+        <li><span class="product-label">Fan:</span> <a href="https://www.grow-shop24.ch/ventilator-200-mm" target="_blank" rel="noopener noreferrer">Inline Fan 200mm</a><br>
+          Powerful ventilation for large tents.</li>
+        <li><span class="product-label">Filter:</span> <a href="https://www.grow-shop24.ch/aktivkohlefilter-200-mm" target="_blank" rel="noopener noreferrer">Activated Carbon Filter 200mm</a><br>
+          Keeps the grow discreet with top odor control.</li>
+      </ul>
+      <p>Perfect for those wanting to upgrade and grow efficiently with strong equipment support.</p>
+    </section>
+
+    <!-- Premium Midrange -->
+    <section id="under1500" class="setup" style="display:none;">
+      <h3>Premium Midrange (1000-1500 CHF)</h3>
+      <p>Top-tier lighting and environment controls for serious hobbyists and semi-professionals.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-200x200x220-cm" target="_blank" rel="noopener noreferrer">Growbox Growtent 200x200x220 cm</a><br>
+          Large tent for bigger crops and easier plant management.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-cob-600w" target="_blank" rel="noopener noreferrer">COB LED Grow Lamp 600W</a><br>
+          High output lighting with full-spectrum for best flowering.</li>
+        <li><span class="product-label">Fan:</span> <a href="https://www.grow-shop24.ch/ventilator-250-mm" target="_blank" rel="noopener noreferrer">Inline Fan 250mm</a><br>
+          Strong airflow for large, dense grow spaces.</li>
+        <li><span class="product-label">Filter:</span> <a href="https://www.grow-shop24.ch/aktivkohlefilter-250-mm" target="_blank" rel="noopener noreferrer">Activated Carbon Filter 250mm</a><br>
+          Maximum odor removal for privacy.</li>
+      </ul>
+      <p>Recommended for growers ready to invest seriously in quality equipment.</p>
+    </section>
+
+    <!-- High-End Grow -->
+    <section id="under2000" class="setup" style="display:none;">
+      <h3>High-End Grow (1500-2000 CHF)</h3>
+      <p>Professional-grade setup with the best lighting, ventilation, and filtration systems available for home growers.</p>
+      <ul>
+        <li><span class="product-label">Tent:</span> <a href="https://www.grow-shop24.ch/growbox-growtent-240x240x220-cm" target="_blank" rel="noopener noreferrer">Growbox Growtent 240x240x220 cm</a><br>
+          Huge space for maximum yields and easy management.</li>
+        <li><span class="product-label">Lamp:</span> <a href="https://www.grow-shop24.ch/led-grow-lampe-cob-1000w" target="_blank" rel="noopener noreferrer">COB LED Grow Lamp 1000W</a><br>
+          Industry-standard lighting for best results indoors.</li>
+        <li><span class="product-label">Fan:</span> <a href="https://www.grow-shop24.ch/ventilator-315-mm" target="_blank" rel="noopener noreferrer">Inline Fan 315mm</a><br>
+          High-performance ventilation system for excellent airflow.</li>
+        <li><span class="product-label">Filter:</span> <a href="https://www.grow-shop24.ch/aktivkohlefilter-315-mm" target="_blank" rel="noopener noreferrer">Activated Carbon Filter 315mm</a><br>
+          Superior odor control for discreet growing.</li>
+      </ul>
+      <p>The ultimate setup for home growers who want professional-grade quality and performance.</p>
+    </section>
 
   </main>
 
